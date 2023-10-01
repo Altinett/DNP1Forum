@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\jonas\\OneDrive\\VIA\\Rider\\TodoAppWasm\\Shared\\Shared.csproj": {}
+    "C:\\Users\\jonas\\OneDrive\\VIA\\Rider\\DNP1Forum\\Shared\\Shared.csproj": {}
   },
   "projects": {
-    "C:\\Users\\jonas\\OneDrive\\VIA\\Rider\\TodoAppWasm\\Shared\\Shared.csproj": {
+    "C:\\Users\\jonas\\OneDrive\\VIA\\Rider\\DNP1Forum\\Shared\\Shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jonas\\OneDrive\\VIA\\Rider\\TodoAppWasm\\Shared\\Shared.csproj",
+        "projectUniqueName": "C:\\Users\\jonas\\OneDrive\\VIA\\Rider\\DNP1Forum\\Shared\\Shared.csproj",
         "projectName": "Shared",
-        "projectPath": "C:\\Users\\jonas\\OneDrive\\VIA\\Rider\\TodoAppWasm\\Shared\\Shared.csproj",
+        "projectPath": "C:\\Users\\jonas\\OneDrive\\VIA\\Rider\\DNP1Forum\\Shared\\Shared.csproj",
         "packagesPath": "C:\\Users\\jonas\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jonas\\OneDrive\\VIA\\Rider\\TodoAppWasm\\Shared\\obj\\",
+        "outputPath": "C:\\Users\\jonas\\OneDrive\\VIA\\Rider\\DNP1Forum\\Shared\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\jonas\\AppData\\Roaming\\NuGet\\NuGet.Config"

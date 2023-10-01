@@ -2,14 +2,22 @@
   "Users": [
     {
       "Id": 1,
-      "UserName": "Jonas",
-      "Todos": null
-    },
-    {
-      "Id": 2,
-      "UserName": "Anissa",
-      "Todos": null
+      "UserName": "asdada",
+      "PassWord": "strdasdaadaing",
+      "Posts": null
     }
   ],
-  "Todos": []
+  "Posts": [
+    {
+      "Id": 1,
+      "Owner": {
+        "Id": 1,
+        "UserName": "asdada",
+        "PassWord": "strdasdaadaing",
+        "Posts": null
+      },
+      "Title": "stasdasdring",
+      "Body": "strasdasdading"
+    }
+  ]
 }

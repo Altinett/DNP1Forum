@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "lGe2RHGbFH6YmFgU+hcY4SiU0JVn+V/4JlRPkRj9tP07t+vxhxcEJjVhUGKIlXkVghFGLn5lMRa6f/3qnss2Jg==",
+  "dgSpecHash": "T0w4i3IzFd2tREozvFTP1T4edd480k2QjhNOkAJKUIHdx0LeXbWYgiNVtDMvU53goy65reJmSKTBTNWqcnNQpQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\jonas\\OneDrive\\VIA\\Rider\\TodoAppWasm\\Shared\\Shared.csproj",
+  "projectFilePath": "C:\\Users\\jonas\\OneDrive\\VIA\\Rider\\DNP1Forum\\Shared\\Shared.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

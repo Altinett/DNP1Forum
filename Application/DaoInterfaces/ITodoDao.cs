@@ -5,12 +5,12 @@ namespace Application.DaoInterfaces;
 
 public interface ITodoDao
 {
-    Task<Todo> CreateAsync(Todo todo);
-    Task<IEnumerable<Todo>> GetAsync(SearchTodoParametersDto searchParameters);
+    Task<Post> CreateAsync(Post post);
+    Task<IEnumerable<Post>> GetAsync(SearchTodoParametersDto searchParameters);
     
-    Task UpdateAsync(Todo todo);
+    Task UpdateAsync(Post post);
     
-    Task<Todo> GetByIdAsync(int id);
+    Task<Post> GetByIdAsync(int id);
     
     Task DeleteAsync(int id);
 }

@@ -13,31 +13,31 @@ public class TodoFileDao : ITodoDao
         this.context = context;
     }
 
-    public Task<Todo> CreateAsync(Todo todo)
+    public Task<Post> CreateAsync(Post post)
     {
         int id = 1;
-        if (context.Todos.Any())
+        if (context.Posts.Any())
         {
-            id = context.Todos.Max(t => t.Id);
+            id = context.Posts.Max(t => t.Id);
             id++;
         }
 
-        todo.Id = id;
+        post.Id = id;
         
-        context.Todos.Add(todo);
+        context.Posts.Add(post);
         context.SaveChanges();
 
-        return Task.FromResult(todo);
+        return Task.FromResult(post);
     }
     
-    public Task<IEnumerable<Todo>> GetAsync(SearchTodoParametersDto searchParams)
+    public Task<IEnumerable<Post>> GetAsync(SearchTodoParametersDto searchParams)
     {
-        IEnumerable<Todo> result = context.Todos.AsEnumerable();
+        IEnumerable<Post> result = context.Posts.AsEnumerable();
 
         if (!string.IsNullOrEmpty(searchParams.Username))
         {
             // we know username is unique, so just fetch the first
-            result = context.Todos.Where(todo =>
+            result = context.Posts.Where(todo =>
                 todo.Owner.UserName.Equals(searchParams.Username, StringComparison.OrdinalIgnoreCase));
         }
 
@@ -45,12 +45,7 @@ public class TodoFileDao : ITodoDao
         {
             result = result.Where(t => t.Owner.Id == searchParams.UserId);
         }
-
-        if (searchParams.CompletedStatus != null)
-        {
-            result = result.Where(t => t.IsCompleted == searchParams.CompletedStatus);
-        }
-
+        
         if (!string.IsNullOrEmpty(searchParams.TitleContains))
         {
             result = result.Where(t =>
@@ -60,22 +55,22 @@ public class TodoFileDao : ITodoDao
         return Task.FromResult(result);
     }
     
-    public Task<Todo?> GetByIdAsync(int todoId)
+    public Task<Post?> GetByIdAsync(int postId)
     {
-        Todo? existing = context.Todos.FirstOrDefault(t => t.Id == todoId);
+        Post? existing = context.Posts.FirstOrDefault(t => t.Id == postId);
         return Task.FromResult(existing);
     }
     
-    public Task UpdateAsync(Todo toUpdate)
+    public Task UpdateAsync(Post toUpdate)
     {
-        Todo? existing = context.Todos.FirstOrDefault(todo => todo.Id == toUpdate.Id);
+        Post? existing = context.Posts.FirstOrDefault(todo => todo.Id == toUpdate.Id);
         if (existing == null)
         {
             throw new Exception($"Todo with id {toUpdate.Id} does not exist!");
         }
 
-        context.Todos.Remove(existing);
-        context.Todos.Add(toUpdate);
+        context.Posts.Remove(existing);
+        context.Posts.Add(toUpdate);
     
         context.SaveChanges();
     
@@ -84,13 +79,13 @@ public class TodoFileDao : ITodoDao
     
     public Task DeleteAsync(int id)
     {
-        Todo? existing = context.Todos.FirstOrDefault(todo => todo.Id == id);
+        Post? existing = context.Posts.FirstOrDefault(todo => todo.Id == id);
         if (existing == null)
         {
             throw new Exception($"Todo with id {id} does not exist!");
         }
 
-        context.Todos.Remove(existing); 
+        context.Posts.Remove(existing); 
         context.SaveChanges();
     
         return Task.CompletedTask;
