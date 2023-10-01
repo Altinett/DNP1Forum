@@ -32,8 +32,7 @@ public class PostsController : ControllerBase
     }
     
     [HttpGet]
-    public async Task<ActionResult<IEnumerable<Post>>> GetAsync([FromQuery] string? userName, [FromQuery] int? userId,
-        [FromQuery] bool? completedStatus, [FromQuery] string? titleContains)
+    public async Task<ActionResult<IEnumerable<Post>>> GetAsync([FromQuery] string? userName, [FromQuery] int? userId, [FromQuery] string? titleContains)
     {
         try
         {
@@ -47,6 +46,23 @@ public class PostsController : ControllerBase
             return StatusCode(500, e.Message);
         }
     }
+    
+    
+    [HttpGet("get-all")]
+    public async Task<ActionResult<IEnumerable<String>>> GetAsync()
+    {
+        try
+        {
+            var todos = await postLogic.GetAsync();
+            return Ok(todos);
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e);
+            return StatusCode(500, e.Message);
+        }
+    }
+    
     
     [HttpPatch]
     public async Task<ActionResult> UpdateAsync([FromBody] PostUpdateDto dto)

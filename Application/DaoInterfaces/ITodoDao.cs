@@ -7,7 +7,7 @@ public interface ITodoDao
 {
     Task<Post> CreateAsync(Post post);
     Task<IEnumerable<Post>> GetAsync(SearchTodoParametersDto searchParameters);
-    
+    Task<IEnumerable<String>> GetAsync();
     Task UpdateAsync(Post post);
     
     Task<Post> GetByIdAsync(int id);

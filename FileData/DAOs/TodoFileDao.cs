@@ -55,6 +55,15 @@ public class TodoFileDao : ITodoDao
         return Task.FromResult(result);
     }
     
+    public Task<IEnumerable<string>> GetAsync()
+    {
+        IEnumerable<string> titles = context.Posts
+            .Select(post => post.Title);
+
+        return Task.FromResult(titles);
+    }
+
+    
     public Task<Post?> GetByIdAsync(int postId)
     {
         Post? existing = context.Posts.FirstOrDefault(t => t.Id == postId);

@@ -34,6 +34,11 @@ public class TodoLogic : ITodoLogic
     {
         return postDao.GetAsync(searchParameters);
     }
+    
+    public Task<IEnumerable<string>> GetAsync()
+    {
+        return postDao.GetAsync();
+    }
 
     private void ValidatePost(TodoCreationDto dto)
     {

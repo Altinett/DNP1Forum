@@ -77,3 +77,4 @@ C:\Users\jonas\OneDrive\VIA\Rider\DNP1Forum\WebAPI\obj\Debug\net7.0\refint\WebAP
 C:\Users\jonas\OneDrive\VIA\Rider\DNP1Forum\WebAPI\obj\Debug\net7.0\WebAPI.pdb
 C:\Users\jonas\OneDrive\VIA\Rider\DNP1Forum\WebAPI\obj\Debug\net7.0\WebAPI.genruntimeconfig.cache
 C:\Users\jonas\OneDrive\VIA\Rider\DNP1Forum\WebAPI\obj\Debug\net7.0\ref\WebAPI.dll
+C:\Users\jonas\OneDrive\VIA\Rider\DNP1Forum\WebAPI\bin\Debug\net7.0\data.json
