@@ -9,15 +9,15 @@ namespace WebAPI.Controllers;
 [Route("[controller]")]
 public class PostsController : ControllerBase
 {
-    private readonly ITodoLogic postLogic;
+    private readonly IPostLogic postLogic;
 
-    public PostsController(ITodoLogic postLogic)
+    public PostsController(IPostLogic postLogic)
     {
         this.postLogic = postLogic;
     }
     
     [HttpPost]
-    public async Task<ActionResult<Post>> CreateAsync([FromBody]TodoCreationDto dto)
+    public async Task<ActionResult<Post>> CreateAsync([FromBody]PostCreationDto dto)
     {
         try
         {
@@ -36,7 +36,7 @@ public class PostsController : ControllerBase
     {
         try
         {
-            SearchTodoParametersDto parameters = new(userName, userId, titleContains);
+            SearchPostParametersDto parameters = new(userName, userId, titleContains);
             var todos = await postLogic.GetAsync(parameters);
             return Ok(todos);
         }
