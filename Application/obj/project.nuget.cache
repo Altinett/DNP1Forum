@@ -1,8 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "BrzcWYqC53rAvFLFqB/mYScFRtpdwp9NoXmPVPP37kayY6bd3GbpQoy7jRRb/vJwo49ecNUrSxbb7Csyl7HQ8A==",
+  "dgSpecHash": "jDgStBp2ZXNKTpXs73GP6TyiI5IGYyWJFH6rmuLB2+95FjcrDoeD44wGWVXD6O9GZJoSCFlL8YzvoIcMxTNUXQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\jonas\\OneDrive\\VIA\\Rider\\DNP1Forum\\Application\\Application.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "/Users/thom869e/Documents/GitHub/DNP1Forum/Application/Application.csproj",
+  "expectedPackageFiles": [
+    "/Users/thom869e/.nuget/packages/microsoft.aspnetcore.authorization/7.0.12/microsoft.aspnetcore.authorization.7.0.12.nupkg.sha512",
+    "/Users/thom869e/.nuget/packages/microsoft.aspnetcore.metadata/7.0.12/microsoft.aspnetcore.metadata.7.0.12.nupkg.sha512",
+    "/Users/thom869e/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/7.0.0/microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512",
+    "/Users/thom869e/.nuget/packages/microsoft.extensions.logging.abstractions/7.0.1/microsoft.extensions.logging.abstractions.7.0.1.nupkg.sha512",
+    "/Users/thom869e/.nuget/packages/microsoft.extensions.options/7.0.1/microsoft.extensions.options.7.0.1.nupkg.sha512",
+    "/Users/thom869e/.nuget/packages/microsoft.extensions.primitives/7.0.0/microsoft.extensions.primitives.7.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

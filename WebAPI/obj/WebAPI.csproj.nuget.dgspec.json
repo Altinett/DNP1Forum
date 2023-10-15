@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\jonas\\OneDrive\\VIA\\Rider\\DNP1Forum\\WebAPI\\WebAPI.csproj": {}
+    "/Users/thom869e/Documents/GitHub/DNP1Forum/WebAPI/WebAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\jonas\\OneDrive\\VIA\\Rider\\DNP1Forum\\Application\\Application.csproj": {
+    "/Users/thom869e/Documents/GitHub/DNP1Forum/Application/Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jonas\\OneDrive\\VIA\\Rider\\DNP1Forum\\Application\\Application.csproj",
+        "projectUniqueName": "/Users/thom869e/Documents/GitHub/DNP1Forum/Application/Application.csproj",
         "projectName": "Application",
-        "projectPath": "C:\\Users\\jonas\\OneDrive\\VIA\\Rider\\DNP1Forum\\Application\\Application.csproj",
-        "packagesPath": "C:\\Users\\jonas\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jonas\\OneDrive\\VIA\\Rider\\DNP1Forum\\Application\\obj\\",
+        "projectPath": "/Users/thom869e/Documents/GitHub/DNP1Forum/Application/Application.csproj",
+        "packagesPath": "/Users/thom869e/.nuget/packages/",
+        "outputPath": "/Users/thom869e/Documents/GitHub/DNP1Forum/Application/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\jonas\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "/Users/thom869e/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
@@ -26,8 +26,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\jonas\\OneDrive\\VIA\\Rider\\DNP1Forum\\Shared\\Shared.csproj": {
-                "projectPath": "C:\\Users\\jonas\\OneDrive\\VIA\\Rider\\DNP1Forum\\Shared\\Shared.csproj"
+              "/Users/thom869e/Documents/GitHub/DNP1Forum/Shared/Shared.csproj": {
+                "projectPath": "/Users/thom869e/Documents/GitHub/DNP1Forum/Shared/Shared.csproj"
               }
             }
           }
@@ -57,21 +57,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.400/RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\jonas\\OneDrive\\VIA\\Rider\\DNP1Forum\\FileData\\FileData.csproj": {
+    "/Users/thom869e/Documents/GitHub/DNP1Forum/FileData/FileData.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jonas\\OneDrive\\VIA\\Rider\\DNP1Forum\\FileData\\FileData.csproj",
+        "projectUniqueName": "/Users/thom869e/Documents/GitHub/DNP1Forum/FileData/FileData.csproj",
         "projectName": "FileData",
-        "projectPath": "C:\\Users\\jonas\\OneDrive\\VIA\\Rider\\DNP1Forum\\FileData\\FileData.csproj",
-        "packagesPath": "C:\\Users\\jonas\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jonas\\OneDrive\\VIA\\Rider\\DNP1Forum\\FileData\\obj\\",
+        "projectPath": "/Users/thom869e/Documents/GitHub/DNP1Forum/FileData/FileData.csproj",
+        "packagesPath": "/Users/thom869e/.nuget/packages/",
+        "outputPath": "/Users/thom869e/Documents/GitHub/DNP1Forum/FileData/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\jonas\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "/Users/thom869e/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
@@ -83,8 +83,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\jonas\\OneDrive\\VIA\\Rider\\DNP1Forum\\Application\\Application.csproj": {
-                "projectPath": "C:\\Users\\jonas\\OneDrive\\VIA\\Rider\\DNP1Forum\\Application\\Application.csproj"
+              "/Users/thom869e/Documents/GitHub/DNP1Forum/Application/Application.csproj": {
+                "projectPath": "/Users/thom869e/Documents/GitHub/DNP1Forum/Application/Application.csproj"
               }
             }
           }
@@ -114,21 +114,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.400/RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\jonas\\OneDrive\\VIA\\Rider\\DNP1Forum\\Shared\\Shared.csproj": {
+    "/Users/thom869e/Documents/GitHub/DNP1Forum/Shared/Shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jonas\\OneDrive\\VIA\\Rider\\DNP1Forum\\Shared\\Shared.csproj",
+        "projectUniqueName": "/Users/thom869e/Documents/GitHub/DNP1Forum/Shared/Shared.csproj",
         "projectName": "Shared",
-        "projectPath": "C:\\Users\\jonas\\OneDrive\\VIA\\Rider\\DNP1Forum\\Shared\\Shared.csproj",
-        "packagesPath": "C:\\Users\\jonas\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jonas\\OneDrive\\VIA\\Rider\\DNP1Forum\\Shared\\obj\\",
+        "projectPath": "/Users/thom869e/Documents/GitHub/DNP1Forum/Shared/Shared.csproj",
+        "packagesPath": "/Users/thom869e/.nuget/packages/",
+        "outputPath": "/Users/thom869e/Documents/GitHub/DNP1Forum/Shared/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\jonas\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "/Users/thom869e/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
@@ -151,6 +151,12 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Authorization": {
+              "target": "Package",
+              "version": "[7.0.12, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -167,21 +173,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.400/RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\jonas\\OneDrive\\VIA\\Rider\\DNP1Forum\\WebAPI\\WebAPI.csproj": {
+    "/Users/thom869e/Documents/GitHub/DNP1Forum/WebAPI/WebAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jonas\\OneDrive\\VIA\\Rider\\DNP1Forum\\WebAPI\\WebAPI.csproj",
+        "projectUniqueName": "/Users/thom869e/Documents/GitHub/DNP1Forum/WebAPI/WebAPI.csproj",
         "projectName": "WebAPI",
-        "projectPath": "C:\\Users\\jonas\\OneDrive\\VIA\\Rider\\DNP1Forum\\WebAPI\\WebAPI.csproj",
-        "packagesPath": "C:\\Users\\jonas\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jonas\\OneDrive\\VIA\\Rider\\DNP1Forum\\WebAPI\\obj\\",
+        "projectPath": "/Users/thom869e/Documents/GitHub/DNP1Forum/WebAPI/WebAPI.csproj",
+        "packagesPath": "/Users/thom869e/.nuget/packages/",
+        "outputPath": "/Users/thom869e/Documents/GitHub/DNP1Forum/WebAPI/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\jonas\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "/Users/thom869e/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
@@ -193,11 +199,11 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\jonas\\OneDrive\\VIA\\Rider\\DNP1Forum\\Application\\Application.csproj": {
-                "projectPath": "C:\\Users\\jonas\\OneDrive\\VIA\\Rider\\DNP1Forum\\Application\\Application.csproj"
+              "/Users/thom869e/Documents/GitHub/DNP1Forum/Application/Application.csproj": {
+                "projectPath": "/Users/thom869e/Documents/GitHub/DNP1Forum/Application/Application.csproj"
               },
-              "C:\\Users\\jonas\\OneDrive\\VIA\\Rider\\DNP1Forum\\FileData\\FileData.csproj": {
-                "projectPath": "C:\\Users\\jonas\\OneDrive\\VIA\\Rider\\DNP1Forum\\FileData\\FileData.csproj"
+              "/Users/thom869e/Documents/GitHub/DNP1Forum/FileData/FileData.csproj": {
+                "projectPath": "/Users/thom869e/Documents/GitHub/DNP1Forum/FileData/FileData.csproj"
               }
             }
           }
@@ -212,6 +218,10 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[7.0.12, )"
+            },
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
               "version": "[7.0.2, )"
@@ -240,7 +250,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.400/RuntimeIdentifierGraph.json"
         }
       }
     }
