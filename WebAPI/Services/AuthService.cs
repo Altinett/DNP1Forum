@@ -1,44 +1,60 @@
 using System.ComponentModel.DataAnnotations;
+using Newtonsoft.Json;
 using Shared.Models;
 
 namespace WebAPI.Services;
 
 public class AuthService : IAuthService
 {
-    
-    //Services mappen er for dummy data
+    private string jsonFilePath = "data.json";
+    private List<User> users;
 
-    private readonly IList<User> users = new List<User>
+    public AuthService()
     {
-        new User
+        LoadUsers();
+    }
+
+    private void LoadUsers()
+    {
+        try
         {
-            Age = 36,
-            Email = "trmo@via.dk",
-            Domain = "via",
-            Name = "Troels Mortensen",
-            PassWord = "onetwo3FOUR",
-            Role = "Teacher",
-            UserName = "trmo",
-            SecurityLevel = 4
-        },
-        new User
-        {
-            Age = 34,
-            Email = "jakob@gmail.com",
-            Domain = "gmail",
-            Name = "Jakob Rasmussen",
-            PassWord = "password",
-            Role = "Student",
-            UserName = "jknr",
-            SecurityLevel = 2
+            // Check if the file exists
+            if (File.Exists(jsonFilePath))
+            {
+                // Load users from the JSON file
+                string jsonData = File.ReadAllText(jsonFilePath);
+
+                // Deserialize JSON data to User objects
+                var data = JsonConvert.DeserializeObject<JsonData>(jsonData);
+                users = data?.Users ?? new List<User>();
+                
+                // Set Age and SecurityLevel to null and 1 respectively
+            }
+            else
+            {
+                // Handle the case when the file does not exist
+                Console.WriteLine($"Error: JSON file not found at '{jsonFilePath}'. Initializing empty user list.");
+                users = new List<User>();
+            }
         }
-    };
+        catch (Exception ex)
+        {
+            // Handle other exceptions (e.g., malformed JSON)
+            Console.WriteLine($"Error: {ex.Message}. Initializing empty user list.");
+            users = new List<User>();
+        }
+    }
+    
+    private class JsonData
+    {
+        public List<User> Users { get; set; }
+    }
 
     public Task<User> ValidateUser(string username, string password)
     {
-        User? existingUser = users.FirstOrDefault(u => 
+        User existingUser = users.FirstOrDefault(u =>
             u.UserName.Equals(username, StringComparison.OrdinalIgnoreCase));
-        
+
         if (existingUser == null)
         {
             throw new Exception("User not found");

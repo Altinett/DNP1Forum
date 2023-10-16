@@ -1,4 +1,5 @@
 using System.Reflection.Metadata;
+using System.Security.AccessControl;
 using System.Security.Claims;
 using System.Text;
 using System.Text.Json;
@@ -25,11 +26,11 @@ public class JwtAuthService : IAuthService
         };
 
         string userAsJson = JsonSerializer.Serialize(userLoginDto);
+        Console.WriteLine(userAsJson);
         StringContent content = new(userAsJson, Encoding.UTF8, "application/json");
-
-        HttpResponseMessage response = await client.PostAsync("https://localhost:7130/auth/login", content);
+        HttpResponseMessage response = await client.PostAsync("http://localhost:5096/auth/login", content);
         string responseContent = await response.Content.ReadAsStringAsync();
-
+        Console.WriteLine(responseContent);
         if (!response.IsSuccessStatusCode)
         {
             throw new Exception(responseContent);
@@ -70,7 +71,7 @@ public class JwtAuthService : IAuthService
     {
         string userAsJson = JsonSerializer.Serialize(user);
         StringContent content = new(userAsJson, Encoding.UTF8, "application/json");
-        HttpResponseMessage response = await client.PostAsync("https://localhost:7130/auth/register", content);
+        HttpResponseMessage response = await client.PostAsync("http://localhost:5096/auth/register", content);
         string responseContent = await response.Content.ReadAsStringAsync();
 
         if (!response.IsSuccessStatusCode)
