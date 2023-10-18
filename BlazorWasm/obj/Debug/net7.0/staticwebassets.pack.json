@@ -1,87 +1,151 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\jonas\\RiderProjects\\DNP1Forum\\BlazorWasm\\bin\\Debug\\net7.0\\wwwroot\\_framework\\blazor.webassembly.js",
+      "Id": "C:\\Users\\jonas\\OneDrive\\VIA\\Rider\\DNP1Forum\\BlazorWasm\\bin\\Debug\\net7.0\\wwwroot\\_framework\\blazor.webassembly.js",
       "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js"
     },
     {
-      "Id": "C:\\Users\\jonas\\RiderProjects\\DNP1Forum\\BlazorWasm\\obj\\Debug\\net7.0\\build-gz\\hl8f7QKX.gz",
+      "Id": "C:\\Users\\jonas\\OneDrive\\VIA\\Rider\\DNP1Forum\\BlazorWasm\\obj\\Debug\\net7.0\\build-gz\\hl8f7QKX.gz",
       "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js.gz"
     },
     {
-      "Id": "C:\\Users\\jonas\\RiderProjects\\DNP1Forum\\BlazorWasm\\obj\\Debug\\net7.0\\scopedcss\\bundle\\BlazorWasm.styles.css",
+      "Id": "C:\\Users\\jonas\\OneDrive\\VIA\\Rider\\DNP1Forum\\BlazorWasm\\obj\\Debug\\net7.0\\scopedcss\\bundle\\BlazorWasm.styles.css",
       "PackagePath": "staticwebassets\\BlazorWasm.styles.css"
     },
     {
-      "Id": "C:\\Users\\jonas\\RiderProjects\\DNP1Forum\\BlazorWasm\\wwwroot\\css\\app.css",
+      "Id": "C:\\Users\\jonas\\OneDrive\\VIA\\Rider\\DNP1Forum\\BlazorWasm\\wwwroot\\banner.gif",
+      "PackagePath": "staticwebassets\\banner.gif"
+    },
+    {
+      "Id": "C:\\Users\\jonas\\OneDrive\\VIA\\Rider\\DNP1Forum\\BlazorWasm\\wwwroot\\css\\app.css",
       "PackagePath": "staticwebassets\\css\\app.css"
     },
     {
-      "Id": "C:\\Users\\jonas\\RiderProjects\\DNP1Forum\\BlazorWasm\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "Id": "C:\\Users\\jonas\\OneDrive\\VIA\\Rider\\DNP1Forum\\BlazorWasm\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css"
     },
     {
-      "Id": "C:\\Users\\jonas\\RiderProjects\\DNP1Forum\\BlazorWasm\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "Id": "C:\\Users\\jonas\\OneDrive\\VIA\\Rider\\DNP1Forum\\BlazorWasm\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
       "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css.map"
     },
     {
-      "Id": "C:\\Users\\jonas\\RiderProjects\\DNP1Forum\\BlazorWasm\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
+      "Id": "C:\\Users\\jonas\\OneDrive\\VIA\\Rider\\DNP1Forum\\BlazorWasm\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
       "PackagePath": "staticwebassets\\css\\open-iconic"
     },
     {
-      "Id": "C:\\Users\\jonas\\RiderProjects\\DNP1Forum\\BlazorWasm\\wwwroot\\css\\open-iconic\\ICON-LICENSE",
+      "Id": "C:\\Users\\jonas\\OneDrive\\VIA\\Rider\\DNP1Forum\\BlazorWasm\\wwwroot\\css\\open-iconic\\ICON-LICENSE",
       "PackagePath": "staticwebassets\\css\\open-iconic"
     },
     {
-      "Id": "C:\\Users\\jonas\\RiderProjects\\DNP1Forum\\BlazorWasm\\wwwroot\\css\\open-iconic\\README.md",
+      "Id": "C:\\Users\\jonas\\OneDrive\\VIA\\Rider\\DNP1Forum\\BlazorWasm\\wwwroot\\css\\open-iconic\\README.md",
       "PackagePath": "staticwebassets\\css\\open-iconic\\README.md"
     },
     {
-      "Id": "C:\\Users\\jonas\\RiderProjects\\DNP1Forum\\BlazorWasm\\wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css",
+      "Id": "C:\\Users\\jonas\\OneDrive\\VIA\\Rider\\DNP1Forum\\BlazorWasm\\wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css",
       "PackagePath": "staticwebassets\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css"
     },
     {
-      "Id": "C:\\Users\\jonas\\RiderProjects\\DNP1Forum\\BlazorWasm\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot",
+      "Id": "C:\\Users\\jonas\\OneDrive\\VIA\\Rider\\DNP1Forum\\BlazorWasm\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot",
       "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.eot"
     },
     {
-      "Id": "C:\\Users\\jonas\\RiderProjects\\DNP1Forum\\BlazorWasm\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf",
+      "Id": "C:\\Users\\jonas\\OneDrive\\VIA\\Rider\\DNP1Forum\\BlazorWasm\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf",
       "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.otf"
     },
     {
-      "Id": "C:\\Users\\jonas\\RiderProjects\\DNP1Forum\\BlazorWasm\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg",
+      "Id": "C:\\Users\\jonas\\OneDrive\\VIA\\Rider\\DNP1Forum\\BlazorWasm\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg",
       "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.svg"
     },
     {
-      "Id": "C:\\Users\\jonas\\RiderProjects\\DNP1Forum\\BlazorWasm\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf",
+      "Id": "C:\\Users\\jonas\\OneDrive\\VIA\\Rider\\DNP1Forum\\BlazorWasm\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf",
       "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.ttf"
     },
     {
-      "Id": "C:\\Users\\jonas\\RiderProjects\\DNP1Forum\\BlazorWasm\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff",
+      "Id": "C:\\Users\\jonas\\OneDrive\\VIA\\Rider\\DNP1Forum\\BlazorWasm\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff",
       "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.woff"
     },
     {
-      "Id": "C:\\Users\\jonas\\RiderProjects\\DNP1Forum\\BlazorWasm\\wwwroot\\favicon.png",
+      "Id": "C:\\Users\\jonas\\OneDrive\\VIA\\Rider\\DNP1Forum\\BlazorWasm\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\jonas\\OneDrive\\VIA\\Rider\\DNP1Forum\\BlazorWasm\\wwwroot\\css\\variables.css",
+      "PackagePath": "staticwebassets\\css\\variables.css"
+    },
+    {
+      "Id": "C:\\Users\\jonas\\OneDrive\\VIA\\Rider\\DNP1Forum\\BlazorWasm\\wwwroot\\favicon.png",
       "PackagePath": "staticwebassets\\favicon.png"
     },
     {
-      "Id": "C:\\Users\\jonas\\RiderProjects\\DNP1Forum\\BlazorWasm\\wwwroot\\icon-192.png",
-      "PackagePath": "staticwebassets\\icon-192.png"
+      "Id": "C:\\Users\\jonas\\OneDrive\\VIA\\Rider\\DNP1Forum\\BlazorWasm\\wwwroot\\icons\\back.svg",
+      "PackagePath": "staticwebassets\\icons\\back.svg"
     },
     {
-      "Id": "C:\\Users\\jonas\\RiderProjects\\DNP1Forum\\BlazorWasm\\wwwroot\\img\\Login.png",
+      "Id": "C:\\Users\\jonas\\OneDrive\\VIA\\Rider\\DNP1Forum\\BlazorWasm\\wwwroot\\icons\\charge.svg",
+      "PackagePath": "staticwebassets\\icons\\charge.svg"
+    },
+    {
+      "Id": "C:\\Users\\jonas\\OneDrive\\VIA\\Rider\\DNP1Forum\\BlazorWasm\\wwwroot\\icons\\cog.svg",
+      "PackagePath": "staticwebassets\\icons\\cog.svg"
+    },
+    {
+      "Id": "C:\\Users\\jonas\\OneDrive\\VIA\\Rider\\DNP1Forum\\BlazorWasm\\wwwroot\\icons\\cog2.svg",
+      "PackagePath": "staticwebassets\\icons\\cog2.svg"
+    },
+    {
+      "Id": "C:\\Users\\jonas\\OneDrive\\VIA\\Rider\\DNP1Forum\\BlazorWasm\\wwwroot\\icons\\document.svg",
+      "PackagePath": "staticwebassets\\icons\\document.svg"
+    },
+    {
+      "Id": "C:\\Users\\jonas\\OneDrive\\VIA\\Rider\\DNP1Forum\\BlazorWasm\\wwwroot\\icons\\eye.svg",
+      "PackagePath": "staticwebassets\\icons\\eye.svg"
+    },
+    {
+      "Id": "C:\\Users\\jonas\\OneDrive\\VIA\\Rider\\DNP1Forum\\BlazorWasm\\wwwroot\\icons\\eye_off.svg",
+      "PackagePath": "staticwebassets\\icons\\eye_off.svg"
+    },
+    {
+      "Id": "C:\\Users\\jonas\\OneDrive\\VIA\\Rider\\DNP1Forum\\BlazorWasm\\wwwroot\\icons\\game.svg",
+      "PackagePath": "staticwebassets\\icons\\game.svg"
+    },
+    {
+      "Id": "C:\\Users\\jonas\\OneDrive\\VIA\\Rider\\DNP1Forum\\BlazorWasm\\wwwroot\\icons\\globe.svg",
+      "PackagePath": "staticwebassets\\icons\\globe.svg"
+    },
+    {
+      "Id": "C:\\Users\\jonas\\OneDrive\\VIA\\Rider\\DNP1Forum\\BlazorWasm\\wwwroot\\icons\\grid.svg",
+      "PackagePath": "staticwebassets\\icons\\grid.svg"
+    },
+    {
+      "Id": "C:\\Users\\jonas\\OneDrive\\VIA\\Rider\\DNP1Forum\\BlazorWasm\\wwwroot\\icons\\home.svg",
+      "PackagePath": "staticwebassets\\icons\\home.svg"
+    },
+    {
+      "Id": "C:\\Users\\jonas\\OneDrive\\VIA\\Rider\\DNP1Forum\\BlazorWasm\\wwwroot\\icons\\list.svg",
+      "PackagePath": "staticwebassets\\icons\\list.svg"
+    },
+    {
+      "Id": "C:\\Users\\jonas\\OneDrive\\VIA\\Rider\\DNP1Forum\\BlazorWasm\\wwwroot\\icons\\person.svg",
+      "PackagePath": "staticwebassets\\icons\\person.svg"
+    },
+    {
+      "Id": "C:\\Users\\jonas\\OneDrive\\VIA\\Rider\\DNP1Forum\\BlazorWasm\\wwwroot\\icons\\tool.svg",
+      "PackagePath": "staticwebassets\\icons\\tool.svg"
+    },
+    {
+      "Id": "C:\\Users\\jonas\\OneDrive\\VIA\\Rider\\DNP1Forum\\BlazorWasm\\wwwroot\\img\\Login.png",
       "PackagePath": "staticwebassets\\img\\Login.png"
     },
     {
-      "Id": "C:\\Users\\jonas\\RiderProjects\\DNP1Forum\\BlazorWasm\\wwwroot\\img\\Logout.png",
+      "Id": "C:\\Users\\jonas\\OneDrive\\VIA\\Rider\\DNP1Forum\\BlazorWasm\\wwwroot\\img\\Logout.png",
       "PackagePath": "staticwebassets\\img\\Logout.png"
     },
     {
-      "Id": "C:\\Users\\jonas\\RiderProjects\\DNP1Forum\\BlazorWasm\\wwwroot\\index.html",
+      "Id": "C:\\Users\\jonas\\OneDrive\\VIA\\Rider\\DNP1Forum\\BlazorWasm\\wwwroot\\index.html",
       "PackagePath": "staticwebassets\\index.html"
     },
     {
-      "Id": "C:\\Users\\jonas\\RiderProjects\\DNP1Forum\\BlazorWasm\\wwwroot\\sample-data\\weather.json",
+      "Id": "C:\\Users\\jonas\\OneDrive\\VIA\\Rider\\DNP1Forum\\BlazorWasm\\wwwroot\\sample-data\\weather.json",
       "PackagePath": "staticwebassets\\sample-data\\weather.json"
     },
     {

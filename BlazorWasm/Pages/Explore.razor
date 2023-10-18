@@ -1,0 +1,52 @@
+@page "/explore"
+@using BlazorWasm.Services.Http
+@using global::Shared.Models
+@inject PostService PostService
+
+<div class="user-posts">
+    <UserPost 
+        Owner="Bob" 
+        Title="How do i open a door?" 
+        Body="I've been trying to figure out how to open a door but i can't seem to get it to work" 
+        Date="16-10-2023 10:58"
+    />
+    <UserPost 
+        Owner="Alice" 
+        Title="How is everyone doing?" 
+        Body="Hope you're having a good day" 
+        Date="13-10-2023 08:23"
+    />
+    <UserPost 
+        Owner="Alice" 
+        Title="Hope everyones doing bad" 
+        Body="Hope   you're having a bad day" 
+        Date="13-10-2023 08:20"
+    />
+</div>
+
+@if (posts != null)
+{
+    <ul>
+        @foreach (var post in posts)
+        {
+            <br>
+            <UserPost 
+                Title="@post.Title" 
+            />
+        }
+    </ul>
+}
+else
+{
+    <p>No posts available.</p>
+}
+
+@code {
+    private List<Post> posts;
+
+    protected override async Task OnInitializedAsync()
+    {
+    // Fetch posts from the data service
+        posts = (await PostService.GetAllPostAsync());
+    }
+}

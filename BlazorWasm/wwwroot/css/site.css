@@ -1,0 +1,149 @@
+
+body, html {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: var(--dark-1);
+    overflow: hidden;
+    --color: rgba(50,50,50, 0.3);
+    background-color: #191a1a;
+    background-image: linear-gradient(0deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%,transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%,transparent),
+    linear-gradient(90deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%,transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%,transparent);
+    background-size: 80px 80px;
+}
+
+.page {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    max-width: 900px;
+    height: 100%;
+}
+
+
+
+
+.nav-menu {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding: .5rem;
+    margin-bottom: .5rem;
+    width: max-content;
+}
+.nav-item {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    width: 100%;
+    max-width: 135px;
+    font-size: 1.1rem;
+    padding: 7.5px;
+    cursor: pointer;
+    transition: .2s ease-in-out;
+    opacity: .5;
+    -webkit-user-drag: none;
+}
+.nav-item::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    background-color: var(--offwhite);
+    transition: transform .25s ease-in-out;
+}
+.nav-menu .nav-item.active {
+    cursor: default;
+    opacity: 1;
+}
+
+.nav-item.active::after,
+.nav-item:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+.nav-item svg,
+.nav-item img {
+    height: 1.2rem;
+    margin-right: 5px;
+    pointer-events: none;
+}
+
+.user-posts {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 500px;
+}
+.user-post {
+    display: flex;
+    flex-direction: column;
+    gap: .25rem;
+    padding: 1rem;
+    background-color: rgba(255, 255, 255, 0.05);
+    box-shadow: var(--box-shadow-small);
+}
+.user-post-title {
+    font-size: 1.5rem;
+}
+.user-post-info {
+    padding-top: .5rem;
+    opacity: .6;
+}
+
+
+
+#blazor-error-ui {
+    display: none;
+}
+
+.register-user {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    --width: 325px;
+    width: clamp(var(--width), var(--width), var(--width));
+    padding: 1rem;
+    /*border: 1px solid #f00;*/
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    translate: -50% -50%;
+    background-color: rgba(255, 255, 255, .03);
+}
+.register-user-title {
+    font-size: 1.7rem;
+}
+.register-user-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+input {
+    padding: .25rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    width: 100%;
+}
+.register-user button {
+    margin-top: 1rem;
+    width: 80px;
+    background-color: rgba(255, 255, 255, .3);
+    border: none;
+    outline: none;
+    font-size: .9rem;
+    padding: .25rem;
+}

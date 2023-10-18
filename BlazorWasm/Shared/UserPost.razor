@@ -1,0 +1,20 @@
+
+<div class="user-post">
+    <div class="user-post-title">@Title</div>
+    @Body
+    <div class="user-post-info">@Owner posted at @Date</div>
+</div>
+
+@code {
+    [Parameter]
+    public string Title { get; set; }
+    
+    [Parameter]
+    public string? Body { get; set; }
+    
+    [Parameter]
+    public string Owner { get; set; }
+    
+    [Parameter]
+    public string Date { get; set; }
+}

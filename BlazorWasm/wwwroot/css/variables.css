@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+
+:root {
+    /* COLORS */
+    --offwhite: rgb(242, 242, 242);
+
+    --dark-1: #111;
+    --dark-2: #1a1a1a;
+    --dark-3: rgb(34, 34, 34);
+    --dark-4: #333;
+    --grey-1: #9c9c9c;
+    --blue-1: rgb(0, 128, 255);
+    --purple-1: rgb(122, 4, 235);
+    --green-1: #1cca5a;
+    --green-2: #4caf50;
+    --red-1: #fe6252;
+    --red-2: #f44336;
+    --yellow-1: rgba(255, 192, 7, 1);
+    
+
+    /* EFFECTS */
+    --gradient-1: linear-gradient( 141deg, rgb(200, 124, 255) 0%, rgb(116, 92, 252) 50%, rgb(63, 241, 253) 100% );
+    --box-shadow-1: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    --box-shadow-2: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    --card-aspect: 1/1.42;
+    
+    /* VARIABLES */
+    --delay: 0;
+
+    /* CURVES */
+    --bounce: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    --bounce-2: cubic-bezier(.47,1.64,.41,.8);
+    --long-bounce: cubic-bezier(0.48, 1.97, 0.5, 0.63);
+
+    --quick: cubic-bezier(0,.89,.35,.98);
+
+    /* MISCELLANEOUS */
+    --box-shadow-small: rgba(0, 0, 0, 0.1) 0 5px 10px;
+    --box-shadow-medium: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    --box-shadow-high: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    --border-radius-1: .1875rem;
+    --border-radius-2: .375rem;
+    --border-radius-2-child: .29rem;
+
+    --border-radius-3: .5625rem;
+    --border-radius-3-child: .51rem;
+
+    --border-radius-4: .75rem;
+    
+}
+
+*:not(svg, path) {
+    user-select: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Space Grotesk", sans-serif, monospace;
+    font-family: "Courier New", sans-serif, monospace;
+    color: var(--offwhite);
+    transition: all .3s var(--quick);
+    scroll-behavior: smooth;
+}

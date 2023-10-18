@@ -1,0 +1,72 @@
+﻿@page "/CreatePost"
+@using BlazorWasm.Services
+@using System.Security.Claims
+@inject IPostService PostService
+
+@if (isLoggedIn)
+{
+    
+    <h3>Hello @name</h3>
+    <h4>Create Post</h4>
+    
+    <div class="field">
+        <label>Title</label>
+        <input type="text" @bind="Title"/>
+    </div>
+    <div class="field" style="text-align: center">
+        <label>Body</label>
+        <input type="text" @bind="Body"/>
+    </div>
+    <button @onclick="Create">Create Post</button>
+}
+else
+{
+    <p>You are not logged in.</p>
+}
+
+
+@code {
+    
+    private string Title;
+    private string Body;
+
+    private async Task Create()
+    {
+        try
+        {
+            await PostService.CreatePost(Int32.Parse(@id), Title, Body);
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e);
+            throw;
+        }
+    }
+    
+    [CascadingParameter]
+    public Task<AuthenticationState> AuthState { get; set; } = null!;
+
+    private string? name;
+    private string? id;
+    private IEnumerable<Claim>? userClaims;
+    private bool isLoggedIn;
+
+    protected override async Task OnInitializedAsync()
+    {
+        AuthenticationState authState = await AuthState;
+        ClaimsPrincipal user = authState.User;
+        isLoggedIn = user.Identity != null;
+        
+        if (!isLoggedIn) return;
+        
+        userClaims = user.Claims;
+        name = user.Identity!.Name!;
+        Claim idClaim = userClaims.FirstOrDefault(c => c.Type == "User ID");
+        id = idClaim?.Value;
+    }
+}
+
+
+
+
+

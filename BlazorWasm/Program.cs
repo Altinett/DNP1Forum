@@ -17,6 +17,12 @@ builder.Services.AddScoped<IAuthService, JwtAuthService>();
 
 builder.Services.AddScoped<AuthenticationStateProvider, CustomAuthProvider>();
 
+builder.Services.AddScoped<IPostService, PostService>();
+
+builder.Services.AddScoped<BlazorWasm.Services.Http.PostService>();
+
+builder.Services.AddScoped<IUserService, UserService>();
+
 AuthorizationPolicies.AddPolicies(builder.Services);
 
 await builder.Build().RunAsync();

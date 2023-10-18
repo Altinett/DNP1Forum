@@ -391,11 +391,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\jonas\\RiderProjects\\DNP1Forum\\FileData\\FileData.csproj",
+      "projectUniqueName": "C:\\Users\\jonas\\OneDrive\\VIA\\Rider\\DNP1Forum\\FileData\\FileData.csproj",
       "projectName": "FileData",
-      "projectPath": "C:\\Users\\jonas\\RiderProjects\\DNP1Forum\\FileData\\FileData.csproj",
+      "projectPath": "C:\\Users\\jonas\\OneDrive\\VIA\\Rider\\DNP1Forum\\FileData\\FileData.csproj",
       "packagesPath": "C:\\Users\\jonas\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\jonas\\RiderProjects\\DNP1Forum\\FileData\\obj\\",
+      "outputPath": "C:\\Users\\jonas\\OneDrive\\VIA\\Rider\\DNP1Forum\\FileData\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\jonas\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -410,8 +410,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\jonas\\RiderProjects\\DNP1Forum\\Application\\Application.csproj": {
-              "projectPath": "C:\\Users\\jonas\\RiderProjects\\DNP1Forum\\Application\\Application.csproj"
+            "C:\\Users\\jonas\\OneDrive\\VIA\\Rider\\DNP1Forum\\Application\\Application.csproj": {
+              "projectPath": "C:\\Users\\jonas\\OneDrive\\VIA\\Rider\\DNP1Forum\\Application\\Application.csproj"
             }
           }
         }
