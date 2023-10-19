@@ -1,33 +1,39 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\jonas\\OneDrive\\VIA\\Rider\\DNP1Forum\\BlazorWasm\\BlazorWasm.csproj": {}
+    "C:\\Users\\Dan-n\\Desktop\\DNP1Forum\\BlazorWasm\\BlazorWasm.csproj": {}
   },
   "projects": {
-    "C:\\Users\\jonas\\OneDrive\\VIA\\Rider\\DNP1Forum\\BlazorWasm\\BlazorWasm.csproj": {
+    "C:\\Users\\Dan-n\\Desktop\\DNP1Forum\\BlazorWasm\\BlazorWasm.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jonas\\OneDrive\\VIA\\Rider\\DNP1Forum\\BlazorWasm\\BlazorWasm.csproj",
+        "projectUniqueName": "C:\\Users\\Dan-n\\Desktop\\DNP1Forum\\BlazorWasm\\BlazorWasm.csproj",
         "projectName": "BlazorWasm",
-        "projectPath": "C:\\Users\\jonas\\OneDrive\\VIA\\Rider\\DNP1Forum\\BlazorWasm\\BlazorWasm.csproj",
-        "packagesPath": "C:\\Users\\jonas\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jonas\\OneDrive\\VIA\\Rider\\DNP1Forum\\BlazorWasm\\obj\\",
+        "projectPath": "C:\\Users\\Dan-n\\Desktop\\DNP1Forum\\BlazorWasm\\BlazorWasm.csproj",
+        "packagesPath": "C:\\Users\\Dan-n\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Dan-n\\Desktop\\DNP1Forum\\BlazorWasm\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\jonas\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Dan-n\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\jonas\\OneDrive\\VIA\\Rider\\DNP1Forum\\Shared\\Shared.csproj": {
-                "projectPath": "C:\\Users\\jonas\\OneDrive\\VIA\\Rider\\DNP1Forum\\Shared\\Shared.csproj"
+              "C:\\Users\\Dan-n\\Desktop\\DNP1Forum\\Shared\\Shared.csproj": {
+                "projectPath": "C:\\Users\\Dan-n\\Desktop\\DNP1Forum\\Shared\\Shared.csproj"
               }
             }
           }
@@ -74,7 +80,7 @@
           "downloadDependencies": [
             {
               "name": "Microsoft.NETCore.App.Runtime.Mono.browser-wasm",
-              "version": "[7.0.2, 7.0.2]"
+              "version": "[7.0.12, 7.0.12]"
             }
           ],
           "frameworkReferences": {
@@ -82,7 +88,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.402\\RuntimeIdentifierGraph.json"
         }
       },
       "runtimes": {
@@ -91,22 +97,28 @@
         }
       }
     },
-    "C:\\Users\\jonas\\OneDrive\\VIA\\Rider\\DNP1Forum\\Shared\\Shared.csproj": {
+    "C:\\Users\\Dan-n\\Desktop\\DNP1Forum\\Shared\\Shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jonas\\OneDrive\\VIA\\Rider\\DNP1Forum\\Shared\\Shared.csproj",
+        "projectUniqueName": "C:\\Users\\Dan-n\\Desktop\\DNP1Forum\\Shared\\Shared.csproj",
         "projectName": "Shared",
-        "projectPath": "C:\\Users\\jonas\\OneDrive\\VIA\\Rider\\DNP1Forum\\Shared\\Shared.csproj",
-        "packagesPath": "C:\\Users\\jonas\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jonas\\OneDrive\\VIA\\Rider\\DNP1Forum\\Shared\\obj\\",
+        "projectPath": "C:\\Users\\Dan-n\\Desktop\\DNP1Forum\\Shared\\Shared.csproj",
+        "packagesPath": "C:\\Users\\Dan-n\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Dan-n\\Desktop\\DNP1Forum\\Shared\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\jonas\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Dan-n\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -150,7 +162,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.402\\RuntimeIdentifierGraph.json"
         }
       }
     }

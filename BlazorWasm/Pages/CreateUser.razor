@@ -4,8 +4,6 @@
 @inject ILogger<CreatePost> Logger
 @using Microsoft.Extensions.Logging
 
-<h3>RegisterUser</h3>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 <div class="register-user">
     <div class="register-user-title">Register</div>
     
@@ -31,7 +29,7 @@
         <!-- RED LABEL -->
         <div style="color: red; margin-top: 5px;" hidden="@PasswordsMatch">Passwords do not match!</div>
         
-        <button @onclick="Create">Submit</button>
+        <div class="button" @onclick="Create">Submit</div>
     </div>
 </div>
 

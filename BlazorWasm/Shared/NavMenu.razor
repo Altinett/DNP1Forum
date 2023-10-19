@@ -1,8 +1,39 @@
-﻿<div class="nav-menu">
+﻿@using System.Security.Claims
+
+<div class="nav-menu">
     <NavItem Title="Home" Path="" Icon="home" />
-    <NavItem Title="Login" Path="login" Icon="charge" />
+    
+    @if (isLoggedIn) {
+        <NavItem Title="Logout" Path="login" Icon="logout" />
+    } else {
+        <NavItem Title="Login" Path="login" Icon="login" />
+    }
+    
     <NavItem Title="Explore" Path="explore" Icon="globe" />
-    <NavItem Title="Create Post" Path="createpost" Icon="document" />
+    <NavItem Title="Post" Path="createpost" Icon="document" />
     <NavItem Title="Profile" Path="profile" Icon="person" />
     <NavItem Title="Register" Path="register" Icon="person" />
 </div>
+
+
+@code {
+    [CascadingParameter]
+    public Task<AuthenticationState> AuthState { get; set; } = null!;
+    private bool isLoggedIn;
+
+    protected override async Task OnInitializedAsync()
+    {
+        AuthenticationState authState = await AuthState;
+        ClaimsPrincipal user = authState.User;
+        UpdateLoginStatus(user);
+    }
+    private void UpdateLoginStatus(ClaimsPrincipal user)
+    {
+        isLoggedIn = user.Identity != null;
+    }
+}
+
+
+
+
+

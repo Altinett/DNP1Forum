@@ -1,11 +1,17 @@
 
-<div class="user-post">
+<div class="user-post" @onclick="OnClick">
     <div class="user-post-title">@Title</div>
     @Body
-    <div class="user-post-info">@Owner posted at @Date</div>
+    <div class="user-post-info">@Owner</div>
+    @if (Id != null) {
+        <div class="user-post-id">Id: @Id</div>
+    }
 </div>
 
 @code {
+    [Parameter]
+    public Action? OnClick { get; set; } 
+    
     [Parameter]
     public string Title { get; set; }
     
@@ -14,7 +20,8 @@
     
     [Parameter]
     public string Owner { get; set; }
-    
+
     [Parameter]
-    public int Date { get; set; }
+    public int? Id { get; set; }
+
 }
