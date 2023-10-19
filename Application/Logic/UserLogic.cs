@@ -16,15 +16,21 @@ public class UserLogic : IUserLogic
 
     public async Task<User> CreateAsync(UserCreationDto dto)
     {
-        User? existing = await userDao.GetByUsernameAsync(dto.UserName);
+        User? existing = await userDao.GetByUsernameAsync(dto.Username);
         if (existing != null)
             throw new Exception("Username already taken!");
 
         ValidateData(dto);
         User toCreate = new User
         {
-            UserName = dto.UserName,
-            PassWord = dto.Password
+            UserName = dto.Username,
+            PassWord = dto.Password,
+            Age = dto.Age,
+            Email = dto.Email,
+            Domain = dto.Email.Split('@')[1],
+            Name = dto.Name,
+            Role = "Member",
+            SecurityLevel = 1
         };
         
         User created = await userDao.CreateAsync(toCreate);
@@ -33,7 +39,7 @@ public class UserLogic : IUserLogic
 
     private static void ValidateData(UserCreationDto userToCreate)
     {
-        string userName = userToCreate.UserName;
+        string userName = userToCreate.Username;
 
         if (userName.Length < 3)
             throw new Exception("Username must be at least 3 characters!");

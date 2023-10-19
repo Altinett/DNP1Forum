@@ -2,8 +2,69 @@
   "Users": [
     {
       "Id": 1,
-      "UserName": "Nani",
-      "PassWord": "Suckky"
+      "UserName": "TommyWTF",
+      "PassWord": "mymomisFat69",
+      "Age": 22,
+      "Email": "Hello@mlg.com",
+      "Domain": "mlg.com",
+      "Name": "Tommy johnny",
+      "Role": "Member",
+      "SecurityLevel": 5
+    },
+    {
+      "Id": 2,
+      "UserName": "bob",
+      "PassWord": "bolders",
+      "Age": 0,
+      "Email": "dsa@poggies.org",
+      "Domain": "poggies.org",
+      "Name": "bob holster",
+      "Role": "Member",
+      "SecurityLevel": 1
+    },
+    {
+      "Id": 3,
+      "UserName": "jonas",
+      "PassWord": "123",
+      "Age": 20,
+      "Email": "jonashenriksenprivat@gmail.com",
+      "Domain": "gmail.com",
+      "Name": "Jonas Henriksen",
+      "Role": "Member",
+      "SecurityLevel": 1
+    },
+    {
+      "Id": 4,
+      "UserName": "test",
+      "PassWord": "addawdaergg",
+      "Age": 213,
+      "Email": "teghergege@vbb.com",
+      "Domain": "vbb.com",
+      "Name": "hgdew",
+      "Role": "Member",
+      "SecurityLevel": 1
+    },
+    {
+      "Id": 5,
+      "UserName": "gregegeg",
+      "PassWord": "1234",
+      "Age": 22,
+      "Email": "wefwf@wefwef.com",
+      "Domain": "wefwef.com",
+      "Name": "awdawd",
+      "Role": "Member",
+      "SecurityLevel": 1
+    },
+    {
+      "Id": 6,
+      "UserName": "JohnnyLolly",
+      "PassWord": "kilo",
+      "Age": 21,
+      "Email": "johnson@orgami.dk",
+      "Domain": "orgami.dk",
+      "Name": "James",
+      "Role": "Member",
+      "SecurityLevel": 1
     }
   ],
   "Posts": [
@@ -11,111 +72,65 @@
       "Id": 1,
       "Owner": {
         "Id": 1,
-        "UserName": "Nani",
-        "PassWord": "Suckky"
+        "UserName": "TommyWTF",
+        "PassWord": "mymomisFat69",
+        "Age": 22,
+        "Email": "Hello@mlg.com",
+        "Domain": "mlg.com",
+        "Name": "Tommy johnny",
+        "Role": "Member",
+        "SecurityLevel": 1
       },
-      "Title": "striasdasdang",
-      "Body": "strdadasding"
+      "Title": "I love my cat",
+      "Body": "XOXO"
     },
     {
       "Id": 2,
       "Owner": {
-        "Id": 1,
-        "UserName": "Nani",
-        "PassWord": "Suckky"
+        "Id": 3,
+        "UserName": "jonas",
+        "PassWord": "123",
+        "Age": 20,
+        "Email": "jonashenriksenprivat@gmail.com",
+        "Domain": "gmail.com",
+        "Name": "Jonas Henriksen",
+        "Role": "Member",
+        "SecurityLevel": 1
       },
-      "Title": "Your mom",
-      "Body": "Is fat XD"
+      "Title": "My mom is a fat hoe",
+      "Body": "fuck me please"
     },
     {
       "Id": 3,
       "Owner": {
-        "Id": 1,
-        "UserName": "Nani",
-        "PassWord": "Suckky"
+        "Id": 3,
+        "UserName": "jonas",
+        "PassWord": "123",
+        "Age": 20,
+        "Email": "jonashenriksenprivat@gmail.com",
+        "Domain": "gmail.com",
+        "Name": "Jonas Henriksen",
+        "Role": "Member",
+        "SecurityLevel": 1
       },
-      "Title": "Your mom",
-      "Body": "Is fat XD"
+      "Title": "My mom is a fat hoe",
+      "Body": "fuck me please"
     },
     {
       "Id": 4,
       "Owner": {
-        "Id": 1,
-        "UserName": "Nani",
-        "PassWord": "Suckky"
+        "Id": 3,
+        "UserName": "jonas",
+        "PassWord": "123",
+        "Age": 20,
+        "Email": "jonashenriksenprivat@gmail.com",
+        "Domain": "gmail.com",
+        "Name": "Jonas Henriksen",
+        "Role": "Member",
+        "SecurityLevel": 1
       },
-      "Title": "Your mom",
-      "Body": "Is fat XD"
-    },
-    {
-      "Id": 5,
-      "Owner": {
-        "Id": 1,
-        "UserName": "Nani",
-        "PassWord": "Suckky"
-      },
-      "Title": "Your mom",
-      "Body": "Is fat XD"
-    },
-    {
-      "Id": 6,
-      "Owner": {
-        "Id": 1,
-        "UserName": "Nani",
-        "PassWord": "Suckky"
-      },
-      "Title": "Your mom",
-      "Body": "Is fat XD"
-    },
-    {
-      "Id": 7,
-      "Owner": {
-        "Id": 1,
-        "UserName": "Nani",
-        "PassWord": "Suckky"
-      },
-      "Title": "Your mom",
-      "Body": "Is fat XD"
-    },
-    {
-      "Id": 8,
-      "Owner": {
-        "Id": 1,
-        "UserName": "Nani",
-        "PassWord": "Suckky"
-      },
-      "Title": "Your mom",
-      "Body": "Is fat XD"
-    },
-    {
-      "Id": 9,
-      "Owner": {
-        "Id": 1,
-        "UserName": "Nani",
-        "PassWord": "Suckky"
-      },
-      "Title": "Your mom",
-      "Body": "Is fat XD"
-    },
-    {
-      "Id": 10,
-      "Owner": {
-        "Id": 1,
-        "UserName": "Nani",
-        "PassWord": "Suckky"
-      },
-      "Title": "Your mom",
-      "Body": "Is fat XD"
-    },
-    {
-      "Id": 11,
-      "Owner": {
-        "Id": 1,
-        "UserName": "Nani",
-        "PassWord": "Suckky"
-      },
-      "Title": "Your mom",
-      "Body": "Is fat XD"
+      "Title": "can you insert me",
+      "Body": "I love iurgeubinge"
     }
   ]
 }

@@ -1,0 +1,69 @@
+﻿@page "/register"
+@using BlazorWasm.Services
+@inject IUserService UserService
+@inject ILogger<CreatePost> Logger
+@using Microsoft.Extensions.Logging
+
+<h3>RegisterUser</h3>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<div class="register-user">
+    <div class="register-user-title">Register</div>
+    
+    <div class="register-user-form">
+        <!-- NAME -->
+        <input placeholder="Name" type="text" @bind="Name"/>
+        
+        <!-- USERNAME -->
+        <input placeholder="Username" type="text" @bind="Username"/>
+        
+        <!-- PASSWORD -->
+        <input placeholder="Password" type="password" @bind="Password"/>
+        
+        <!-- REPEAT PASSWORD -->
+        <input placeholder="Confirm Password" type="password"@bind="Password2"/>
+        
+        <!-- EMAIL -->
+        <input placeholder="Email" type="email" @bind="Email"/>
+        
+        <!-- AGE -->
+        <input placeholder="Age" type="number" @bind="Age"/>
+        
+        <!-- RED LABEL -->
+        <div style="color: red; margin-top: 5px;" hidden="@PasswordsMatch">Passwords do not match!</div>
+        
+        <button @onclick="Create">Submit</button>
+    </div>
+</div>
+
+@code {
+    private string Name, Username, Password, Password2, Email;
+    private int Age;
+    private bool PasswordsMatch = true;
+    
+    private async Task Create()
+    {
+        Logger.LogInformation(Name);
+        
+        if (!IsPasswordValid())
+        {
+            PasswordsMatch = false;
+            return;
+        }
+        PasswordsMatch = true;
+        try
+        {
+            await UserService.CreateUser(Name, Username, Password, Email, Age);
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e);
+            throw;
+        }
+    }
+    
+    private bool IsPasswordValid()
+    {
+        return Password == Password2;
+    }
+    
+}

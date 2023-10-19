@@ -32,11 +32,11 @@ public class PostsController : ControllerBase
     }
     
     [HttpGet]
-    public async Task<ActionResult<IEnumerable<Post>>> GetAsync([FromQuery] string? userName, [FromQuery] int? userId, [FromQuery] string? titleContains)
+    public async Task<ActionResult<IEnumerable<Post>>> GetAsync([FromQuery] string? userName, [FromQuery] int? userId, [FromQuery] string? titleContains, [FromQuery] int? postId)
     {
         try
         {
-            SearchPostParametersDto parameters = new(userName, userId, titleContains);
+            SearchPostParametersDto parameters = new(userName, userId, titleContains, postId);
             var todos = await postLogic.GetAsync(parameters);
             return Ok(todos);
         }

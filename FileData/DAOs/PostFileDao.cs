@@ -51,6 +51,11 @@ public class PostFileDao : IPostDao
             result = result.Where(t =>
                 t.Title.Contains(searchParams.TitleContains, StringComparison.OrdinalIgnoreCase));
         }
+        
+        if (searchParams.PostId != null)
+        {
+            result = result.Where(t => t.Id == searchParams.PostId);
+        }
 
         return Task.FromResult(result);
     }

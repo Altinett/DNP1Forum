@@ -1,0 +1,42 @@
+﻿@page "/explore/{postId}"
+@using BlazorWasm.Services.Http
+@using global::Shared.Models
+@inject PostService PostService
+
+<h3>PostDetails</h3>
+
+<div class="user-posts">
+    @if (post != null)
+    {
+        <UserPost 
+            Title="@post.Title" 
+            Body="@post.Body" 
+        />
+    }
+    else
+    {
+        <p>Loading post details...</p>
+    }
+</div>
+
+
+@code {
+    [Parameter]
+    public string PostId { get; set; }
+
+    private Post post;
+
+    protected override async Task OnInitializedAsync()
+    {
+        if (!string.IsNullOrEmpty(PostId) && int.TryParse(PostId, out int postId))
+        {
+    // Fetch the specific post using the postId from the route
+            post = await PostService.GetPost(postId);
+        }
+        else
+        {
+    // Handle invalid postId or post not found
+    // You can redirect to an error page or handle it as per your application logic.
+        }
+    }
+}

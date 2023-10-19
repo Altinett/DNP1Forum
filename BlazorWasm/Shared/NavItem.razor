@@ -1,0 +1,16 @@
+
+<NavLink class="nav-item" ActiveClass="active" href="@Path" Match="NavLinkMatch.All">
+    @(new MarkupString($"<img src=\"icons/{Icon}.svg\" />"))
+    @Title
+</NavLink>
+
+@code {
+    [Parameter]
+    public string? Title { get; set; }
+    
+    [Parameter]
+    public string? Path { get; set; }
+    
+    [Parameter]
+    public string? Icon { get; set; }
+}
