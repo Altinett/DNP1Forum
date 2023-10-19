@@ -2,38 +2,46 @@
 
 <div class="nav-menu">
     <NavItem Title="Home" Path="" Icon="home" />
-    
-    @if (isLoggedIn) {
-        <NavItem Title="Logout" Path="login" Icon="logout" />
-    } else {
-        <NavItem Title="Login" Path="login" Icon="login" />
-    }
-    
     <NavItem Title="Explore" Path="explore" Icon="globe" />
-    <NavItem Title="Post" Path="createpost" Icon="document" />
-    <NavItem Title="Profile" Path="profile" Icon="person" />
-    <NavItem Title="Register" Path="register" Icon="person" />
+    
+    <AuthorizeView>
+        <Authorized>
+            <NavItem Title="Post" Path="createpost" Icon="document"/>
+            <NavItem Title="Profile" Path="profile" Icon="person"/>
+            <NavItem Title="Logout" Path="logout" Icon="logout"/>
+        </Authorized>
+        <NotAuthorized>
+            <NavItem Title="Login" Path="login" Icon="login"/>
+            <NavItem Title="Register" Path="register" Icon="person" />
+        </NotAuthorized>
+    </AuthorizeView>
 </div>
 
-
 @code {
+
     [CascadingParameter]
     public Task<AuthenticationState> AuthState { get; set; } = null!;
+
+    private string? name;
+    private string? id;
+    private IEnumerable<Claim>? userClaims;
     private bool isLoggedIn;
 
     protected override async Task OnInitializedAsync()
     {
         AuthenticationState authState = await AuthState;
         ClaimsPrincipal user = authState.User;
-        UpdateLoginStatus(user);
-    }
-    private void UpdateLoginStatus(ClaimsPrincipal user)
-    {
         isLoggedIn = user.Identity != null;
+        
+        if (!isLoggedIn) return;
+        
+        userClaims = user.Claims;
+        name = user.Identity!.Name!;
+        Claim idClaim = userClaims.FirstOrDefault(c => c.Type == "User ID");
+        id = idClaim?.Value;
     }
+
 }
-
-
 
 
 

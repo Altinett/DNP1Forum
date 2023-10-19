@@ -5,26 +5,28 @@
 
 <AuthorizeView>
     <NotAuthorized>
-        <div class="card">
-            <h3>Please login</h3>
-            <div class="field">
-                <input placeholder="Username" type="text" @bind="userName"/>
-            </div>
-            <div class="field">
-                <input placeholder="Password" type="password" @bind="password"/>
-            </div>
-            @if (!string.IsNullOrEmpty(errorLabel))
-            {
+        <form @onsubmit="LoginAsync">
+            <div class="card">
+                <h3>Please login</h3>
+                <div class="field">
+                    <input placeholder="Username" type="text" @bind="userName"/>
+                </div>
+                <div class="field">
+                    <input placeholder="Password" type="password" @bind="password"/>
+                </div>
+                @if (!string.IsNullOrEmpty(errorLabel)) {
                 <div class="field">
                     <label style="color: red">
                         @errorLabel
                     </label>
                 </div>
-            }
-            <div class="field">
-                <div class="button" @onclick="LoginAsync">Log in</div>
+                }
+                <div class="field">
+                    <input type="submit" class="button" value="Log in" />
+                </div>
             </div>
-        </div>
+        </form>
+       
     </NotAuthorized>
     <Authorized>
         <div class="card">

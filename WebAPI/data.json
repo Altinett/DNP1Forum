@@ -65,6 +65,39 @@
       "Name": "James",
       "Role": "Member",
       "SecurityLevel": 1
+    },
+    {
+      "Id": 7,
+      "UserName": "hello",
+      "PassWord": "hello",
+      "Age": 123,
+      "Email": "hello@world.com",
+      "Domain": "world.com",
+      "Name": "heloo",
+      "Role": "Member",
+      "SecurityLevel": 1
+    },
+    {
+      "Id": 8,
+      "UserName": "admin",
+      "PassWord": "admin",
+      "Age": 123,
+      "Email": "admin@admin.admin",
+      "Domain": "admin.admin",
+      "Name": "asdf",
+      "Role": "Member",
+      "SecurityLevel": 1
+    },
+    {
+      "Id": 9,
+      "UserName": "dannguyen",
+      "PassWord": "asdf1234",
+      "Age": 19,
+      "Email": "dannguyen@gmail.com",
+      "Domain": "gmail.com",
+      "Name": "Dan",
+      "Role": "Member",
+      "SecurityLevel": 1
     }
   ],
   "Posts": [
@@ -131,6 +164,54 @@
       },
       "Title": "can you insert me",
       "Body": "I love iurgeubinge"
+    },
+    {
+      "Id": 5,
+      "Owner": {
+        "Id": 3,
+        "UserName": "jonas",
+        "PassWord": "123",
+        "Age": 20,
+        "Email": "jonashenriksenprivat@gmail.com",
+        "Domain": "gmail.com",
+        "Name": "Jonas Henriksen",
+        "Role": "Member",
+        "SecurityLevel": 1
+      },
+      "Title": "Hello World",
+      "Body": "How are you\n\n\n\n\n\n\n\n\n\n\n\nasdf"
+    },
+    {
+      "Id": 6,
+      "Owner": {
+        "Id": 3,
+        "UserName": "jonas",
+        "PassWord": "123",
+        "Age": 20,
+        "Email": "jonashenriksenprivat@gmail.com",
+        "Domain": "gmail.com",
+        "Name": "Jonas Henriksen",
+        "Role": "Member",
+        "SecurityLevel": 1
+      },
+      "Title": "YUP YUP",
+      "Body": "WOop \n"
+    },
+    {
+      "Id": 7,
+      "Owner": {
+        "Id": 9,
+        "UserName": "dannguyen",
+        "PassWord": "asdf1234",
+        "Age": 19,
+        "Email": "dannguyen@gmail.com",
+        "Domain": "gmail.com",
+        "Name": "Dan",
+        "Role": "Member",
+        "SecurityLevel": 1
+      },
+      "Title": "Hello",
+      "Body": "Hows it going"
     }
   ]
 }

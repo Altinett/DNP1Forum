@@ -1,5 +1,5 @@
 
-<NavLink class="nav-item" ActiveClass="active" href="@Path" Match="NavLinkMatch.All">
+<NavLink @onclick="OnClick" class="nav-item" ActiveClass="active" href="@Path" Match="NavLinkMatch.All">
     @(new MarkupString($"<img src=\"icons/{Icon}.svg\" />"))
     @Title
 </NavLink>
@@ -14,4 +14,6 @@
     [Parameter]
     public string? Icon { get; set; }
     
+    [Parameter]
+    public Action? OnClick { get; set; }
 }

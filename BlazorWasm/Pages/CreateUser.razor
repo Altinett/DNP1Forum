@@ -1,67 +1,107 @@
 ﻿@page "/register"
 @using BlazorWasm.Services
 @inject IUserService UserService
-@inject ILogger<CreatePost> Logger
-@using Microsoft.Extensions.Logging
 
-<div class="register-user">
-    <div class="register-user-title">Register</div>
-    
-    <div class="register-user-form">
-        <!-- NAME -->
-        <input placeholder="Name" type="text" @bind="Name"/>
+<form @onsubmit="Create">
+    <div class="register-user">
+        <div class="register-user-title">Register</div>
         
-        <!-- USERNAME -->
-        <input placeholder="Username" type="text" @bind="Username"/>
-        
-        <!-- PASSWORD -->
-        <input placeholder="Password" type="password" @bind="Password"/>
-        
-        <!-- REPEAT PASSWORD -->
-        <input placeholder="Confirm Password" type="password"@bind="Password2"/>
-        
-        <!-- EMAIL -->
-        <input placeholder="Email" type="email" @bind="Email"/>
-        
-        <!-- AGE -->
-        <input placeholder="Age" type="number" @bind="Age"/>
-        
-        <!-- RED LABEL -->
-        <div style="color: red; margin-top: 5px;" hidden="@PasswordsMatch">Passwords do not match!</div>
-        
-        <div class="button" @onclick="Create">Submit</div>
+        <div class="register-user-form">
+            <!-- NAME -->
+            <input placeholder="Name" type="text" @bind="Name"/>
+            
+            <!-- USERNAME -->
+            <input placeholder="Username" type="text" @bind="Username"/>
+            
+            <!-- PASSWORD -->
+            <input placeholder="Password" type="password" @bind="Password"/>
+            
+            <!-- REPEAT PASSWORD -->
+            <input placeholder="Confirm Password" type="password"@bind="Password2"/>
+            
+            <!-- EMAIL -->
+            <input placeholder="Email" type="email" @bind="Email"/>
+            
+            <!-- AGE -->
+            <input placeholder="Age" type="text" @bind="Age"/>
+            
+            <!-- RED LABEL -->
+            <div style="color: @MessageColor; margin-top: 5px;" hidden="@Hide">@MessageLabel</div>
+            
+            <input type="submit" class="button" value="Submit"/>
+        </div>
     </div>
-</div>
+</form>
+
 
 @code {
-    private string Name, Username, Password, Password2, Email;
-    private int Age;
-    private bool PasswordsMatch = true;
+    private string Name, Username, Password, Password2, Email, Age;
+    private string MessageColor = "red";
+    private bool Hide = true;
+    private string? MessageLabel;
     
     private async Task Create()
     {
-        Logger.LogInformation(Name);
+        HideMessage();
+
+        if (!IsAgeValid()) {
+            ErrorMessage("Not valid age");
+            return;
+        }
         
         if (!IsPasswordValid())
         {
-            PasswordsMatch = false;
+            ErrorMessage("Passwords do not match!");
             return;
         }
-        PasswordsMatch = true;
+        
         try
         {
-            await UserService.CreateUser(Name, Username, Password, Email, Age);
+            await UserService.CreateUser(Name, Username, Password, Email, ParseAge());
+            SuccessMessage("Successfully created user");
         }
         catch (Exception e)
         {
             Console.WriteLine(e);
-            throw;
+            ErrorMessage("Something went wrong creating a user");
         }
+    }
+
+    private void ErrorMessage(string message) {
+        MessageColor = "red";
+        Hide = false;
+        MessageLabel = message;
+    }
+
+    private void SuccessMessage(string message) {
+        MessageColor = "green";
+        Hide = false;
+        MessageLabel = message;
+    }
+
+    private void HideMessage() {
+        Hide = true;
     }
     
     private bool IsPasswordValid()
     {
         return Password == Password2;
+    }
+
+    private int ParseAge() {
+        int age = Int16.Parse(Age);
+        return age;
+    }
+
+    private bool IsAgeValid() {
+        try {
+            int age = Int16.Parse(Age);
+            if (age < 13 || age > 130) return false;
+            return true;
+        } catch (Exception e) {
+            Console.WriteLine(e);
+            return false;
+        }
     }
     
 }

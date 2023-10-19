@@ -3,21 +3,23 @@
 @using System.Security.Claims
 @inject IPostService PostService
 
+@inject NavigationManager navMgr
+
 @if (isLoggedIn)
 {
     
-    <h3>Hello @name</h3>
-    <h4>Create Post</h4>
+    <form @onsubmit="Create">
+        <h3>Hello @name</h3>
+        <br/>
+        <div class="create-post-form">
+            <h4>Create a post</h4>
+            <input placeholder="Title" type="text" @bind="Title"/>
+            <textarea placeholder="Body" type="text" @bind="Body"/>
+            <input type="submit" class="button" value="Post"/>
+        </div>
+    </form>
     
-    <div class="field">
-        <label>Title</label>
-        <input type="text" @bind="Title"/>
-    </div>
-    <div class="field" style="text-align: center">
-        <label>Body</label>
-        <input type="text" @bind="Body"/>
-    </div>
-    <button @onclick="Create">Create Post</button>
+    
 }
 else
 {
@@ -35,6 +37,7 @@ else
         try
         {
             await PostService.CreatePost(Int32.Parse(@id), Title, Body);
+            navMgr.NavigateTo("explore");
         }
         catch (Exception e)
         {
