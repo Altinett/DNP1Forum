@@ -10,6 +10,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileData", "FileData\FileDa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorWasm", "BlazorWasm\BlazorWasm.csproj", "{BD5A70CF-6C8E-43A9-BF13-C5D468FA4279}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EfcDataAccess", "EfcDataAccess\EfcDataAccess.csproj", "{50CC6E4C-D36E-4A60-9FBD-97CB9E90A63F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -36,5 +38,9 @@ Global
 		{BD5A70CF-6C8E-43A9-BF13-C5D468FA4279}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BD5A70CF-6C8E-43A9-BF13-C5D468FA4279}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BD5A70CF-6C8E-43A9-BF13-C5D468FA4279}.Release|Any CPU.Build.0 = Release|Any CPU
+		{50CC6E4C-D36E-4A60-9FBD-97CB9E90A63F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50CC6E4C-D36E-4A60-9FBD-97CB9E90A63F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50CC6E4C-D36E-4A60-9FBD-97CB9E90A63F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50CC6E4C-D36E-4A60-9FBD-97CB9E90A63F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
