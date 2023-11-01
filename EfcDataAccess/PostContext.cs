@@ -12,7 +12,7 @@ public class PostContext : DbContext
     
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
-        optionsBuilder.UseSqlite("Data Source = ../WebAPI/Todo.db");
+        optionsBuilder.UseSqlite("Data Source = ../WebAPI/Post.db");
     }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)

@@ -54,168 +54,60 @@
       "Name": "Sara Wilson",
       "Role": "Member",
       "SecurityLevel": 3
+    },
+    {
+      "Id": 6,
+      "UserName": "daspo",
+      "PassWord": "pokr4",
+      "Age": 28,
+      "Email": "ioorvl@iof.com",
+      "Domain": "iof.com",
+      "Name": "Hello faggit",
+      "Role": "Member",
+      "SecurityLevel": 1
+    },
+    {
+      "Id": 7,
+      "UserName": "po3r",
+      "PassWord": "rbnu5y5butpi",
+      "Age": 22,
+      "Email": "pokfewo@giwei.com",
+      "Domain": "giwei.com",
+      "Name": "wpodijaodwao",
+      "Role": "Member",
+      "SecurityLevel": 1
     }
   ],
   "Posts": [
     {
-      "Id": 1,
-      "Owner": {
-        "Id": 1,
-        "UserName": "alice_smith",
-        "PassWord": "p@ssw0rd",
-        "Age": 25,
-        "Email": "alice.smith@example.com",
-        "Domain": "example.com",
-        "Name": "Alice Smith",
-        "Role": "Member",
-        "SecurityLevel": 3
-      },
-      "Title": "First Post",
-      "Body": "This is the body of the first post."
+      "Id": 1
     },
     {
-      "Id": 2,
-      "Owner": {
-        "Id": 2,
-        "UserName": "bob_jones",
-        "PassWord": "secretp@ss",
-        "Age": 35,
-        "Email": "bob.jones@example.com",
-        "Domain": "example.com",
-        "Name": "Bob Jones",
-        "Role": "Member",
-        "SecurityLevel": 1
-      },
-      "Title": "Travel Adventures",
-      "Body": "Exploring new places and trying out different cuisines."
+      "Id": 2
     },
     {
-      "Id": 3,
-      "Owner": {
-        "Id": 3,
-        "UserName": "lisa_johnson",
-        "PassWord": "mysecure123",
-        "Age": 28,
-        "Email": "lisa.johnson@example.com",
-        "Domain": "example.com",
-        "Name": "Lisa Johnson",
-        "Role": "Member",
-        "SecurityLevel": 1
-      },
-      "Title": "Cooking Tips",
-      "Body": "Learn how to cook delicious meals with these easy tips."
+      "Id": 3
     },
     {
-      "Id": 4,
-      "Owner": {
-        "Id": 4,
-        "UserName": "mike_miller",
-        "PassWord": "m1k3p@ss",
-        "Age": 40,
-        "Email": "mike.miller@example.com",
-        "Domain": "example.com",
-        "Name": "Mike Miller",
-        "Role": "Member",
-        "SecurityLevel": 2
-      },
-      "Title": "Tech Gadgets",
-      "Body": "Discover the latest gadgets and technology trends in the market."
+      "Id": 4
     },
     {
-      "Id": 5,
-      "Owner": {
-        "Id": 5,
-        "UserName": "sara_wilson",
-        "PassWord": "s@r@p@ss",
-        "Age": 22,
-        "Email": "sara.wilson@example.com",
-        "Domain": "example.com",
-        "Name": "Sara Wilson",
-        "Role": "Member",
-        "SecurityLevel": 3
-      },
-      "Title": "Fitness Journey",
-      "Body": "Documenting my fitness progress and workout routines."
+      "Id": 5
     },
     {
-      "Id": 6,
-      "Owner": {
-        "Id": 3,
-        "UserName": "lisa_johnson",
-        "PassWord": "mysecure123",
-        "Age": 28,
-        "Email": "lisa.johnson@example.com",
-        "Domain": "example.com",
-        "Name": "Lisa Johnson",
-        "Role": "Member",
-        "SecurityLevel": 1
-      },
-      "Title": "Book Recommendations",
-      "Body": "Must-read books for every avid reader out there."
+      "Id": 6
     },
     {
-      "Id": 7,
-      "Owner": {
-        "Id": 2,
-        "UserName": "bob_jones",
-        "PassWord": "secretp@ss",
-        "Age": 35,
-        "Email": "bob.jones@example.com",
-        "Domain": "example.com",
-        "Name": "Bob Jones",
-        "Role": "Member",
-        "SecurityLevel": 1
-      },
-      "Title": "Movie Reviews",
-      "Body": "Reviewing the latest movies and TV shows."
+      "Id": 7
     },
     {
-      "Id": 8,
-      "Owner": {
-        "Id": 2,
-        "UserName": "bob_jones",
-        "PassWord": "secretp@ss",
-        "Age": 35,
-        "Email": "bob.jones@example.com",
-        "Domain": "example.com",
-        "Name": "Bob Jones",
-        "Role": "Member",
-        "SecurityLevel": 1
-      },
-      "Title": "DIY Projects",
-      "Body": "Creative DIY ideas to decorate your home."
+      "Id": 8
     },
     {
-      "Id": 9,
-      "Owner": {
-        "Id": 5,
-        "UserName": "sara_wilson",
-        "PassWord": "s@r@p@ss",
-        "Age": 22,
-        "Email": "sara.wilson@example.com",
-        "Domain": "example.com",
-        "Name": "Sara Wilson",
-        "Role": "Member",
-        "SecurityLevel": 3
-      },
-      "Title": "Gaming World",
-      "Body": "Exploring the virtual gaming universe and gaming strategies."
+      "Id": 9
     },
     {
-      "Id": 10,
-      "Owner": {
-        "Id": 1,
-        "UserName": "alice_smith",
-        "PassWord": "p@ssw0rd",
-        "Age": 25,
-        "Email": "alice.smith@example.com",
-        "Domain": "example.com",
-        "Name": "Alice Smith",
-        "Role": "Member",
-        "SecurityLevel": 3
-      },
-      "Title": "Nature Photography",
-      "Body": "Capturing the beauty of nature through my lens."
+      "Id": 10
     }
   ]
 }
