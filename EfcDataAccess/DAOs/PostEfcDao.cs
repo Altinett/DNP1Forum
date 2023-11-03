@@ -23,7 +23,7 @@ public class PostEfcDao : IPostDao
 
     public Task<IEnumerable<Post>> GetAsync(SearchPostParametersDto searchParams)
     {
-        IEnumerable<Post> result = context.Posts.AsEnumerable();
+        IEnumerable<Post> result = context.GetPostsWithUsernames();
 
         if (!string.IsNullOrEmpty(searchParams.Username))
         {

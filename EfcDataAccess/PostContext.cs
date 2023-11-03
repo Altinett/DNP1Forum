@@ -20,4 +20,9 @@ public class PostContext : DbContext
         modelBuilder.Entity<Post>().HasKey(todo => todo.Id);
         modelBuilder.Entity<User>().HasKey(user => user.Id);
     }
+    
+    public IQueryable<Post> GetPostsWithUsernames()
+    {
+        return Posts.Include(post => post.Owner);
+    }
 }

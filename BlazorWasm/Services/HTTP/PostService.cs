@@ -41,7 +41,7 @@ public class PostService : IPostService
         
             // Deserialize the response as a List<Post>
             List<Post> posts = JsonConvert.DeserializeObject<List<Post>>(responseData);
-        
+            
             // If the response is an array, take the first item
             Post post = posts.FirstOrDefault();
         

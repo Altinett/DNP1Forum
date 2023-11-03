@@ -1,4 +1,5 @@
 ﻿using Application.LogicInterfaces;
+using EfcDataAccess.DAOs;
 using Microsoft.AspNetCore.Mvc;
 using Shared.DTOs;
 using Shared.Models;
@@ -10,10 +11,12 @@ namespace WebAPI.Controllers;
 public class PostsController : ControllerBase
 {
     private readonly IPostLogic postLogic;
+    private PostEfcDao postEfcDao;
 
-    public PostsController(IPostLogic postLogic)
+    public PostsController(IPostLogic postLogic, PostEfcDao postEfcDao)
     {
         this.postLogic = postLogic;
+        this.postEfcDao = postEfcDao; 
     }
     
     [HttpPost]
@@ -37,8 +40,8 @@ public class PostsController : ControllerBase
         try
         {
             SearchPostParametersDto parameters = new(userName, userId, titleContains, postId);
-            var todos = await postLogic.GetAsync(parameters);
-            return Ok(todos);
+            var posts = await postEfcDao.GetAsync(parameters);
+            return Ok(posts);
         }
         catch (Exception e)
         {

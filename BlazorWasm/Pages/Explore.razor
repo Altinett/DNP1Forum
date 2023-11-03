@@ -23,19 +23,21 @@
 </div>
 
 @code {
-    private List<Post> posts;
-
+    private List<Post> posts = new List<Post>();
+    
+    
+    
     protected override async Task OnInitializedAsync()
     {
     // Fetch posts from the data service
-        posts = (await PostService.GetAllPostAsync());
+        posts = await PostService.GetAllPostAsync();
     }
 }
 
 @code {
 
-    private void RedirectToExplore(int lol)
+    private void RedirectToExplore(int id)
     {
-        NavigationManager.NavigateTo($"/explore/{lol}");
+        NavigationManager.NavigateTo($"/explore/{id}");
     }
 }
