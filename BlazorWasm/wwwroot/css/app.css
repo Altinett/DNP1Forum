@@ -93,7 +93,7 @@ body, html {
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    max-width: 500px;
+    max-width: 400px;
     height: 100%;
 }
 .user-post {
@@ -113,6 +113,10 @@ body, html {
 }
 .user-post-title {
     font-size: 1.5rem;
+    white-space: pre;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    
 }
 .user-post-info {
     padding-top: .5rem;

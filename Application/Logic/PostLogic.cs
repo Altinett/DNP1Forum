@@ -44,8 +44,17 @@ public class PostLogic : IPostLogic
     {
         if (string.IsNullOrEmpty(dto.Title)) throw new Exception("Title cannot be empty.");
         
+        if (dto.Title.Length > 100)
+        {
+            throw new Exception("Title too long! Max 100 characters");
+        }
+        
         if (string.IsNullOrEmpty(dto.Body)) throw new Exception("Body cannot be empty.");
 
+        if (dto.Body.Length > 500)
+        {
+            throw new Exception("Body too long! Max 500 characters");
+        }
         // other validation stuff
     }
     
@@ -55,7 +64,7 @@ public class PostLogic : IPostLogic
 
         if (existing == null)
         {
-            throw new Exception($"Todo with ID {dto.Id} not found!");
+            throw new Exception($"Post with ID {dto.Id} not found!");
         }
 
         User? user = null;
@@ -78,12 +87,12 @@ public class PostLogic : IPostLogic
             Id = existing.Id,
         };
 
-        ValidateTodo(updated);
+        ValidatePost(updated);
 
         await postDao.UpdateAsync(updated);
     }
 
-    private void ValidateTodo(Post dto)
+    private void ValidatePost(Post dto)
     {
         if (string.IsNullOrEmpty(dto.Title)) throw new Exception("Title cannot be empty.");
         // other validation stuff
@@ -91,10 +100,10 @@ public class PostLogic : IPostLogic
     
     public async Task DeleteAsync(int id)
     {
-        Post? todo = await postDao.GetByIdAsync(id);
-        if (todo == null)
+        Post? post = await postDao.GetByIdAsync(id);
+        if (post == null)
         {
-            throw new Exception($"Todo with ID {id} was not found!");
+            throw new Exception($"Post with ID {id} was not found!");
         }
 
         await postDao.DeleteAsync(id);

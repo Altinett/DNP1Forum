@@ -25,7 +25,7 @@ public class PostsController : ControllerBase
         try
         {
             Post created = await postLogic.CreateAsync(dto);
-            return Created($"/todos/{created.Id}", created);
+            return Created($"/posts/{created.Id}", created);
         }
         catch (Exception e)
         {
@@ -56,8 +56,8 @@ public class PostsController : ControllerBase
     {
         try
         {
-            var todos = await postLogic.GetAsync();
-            return Ok(todos);
+            var posts = await postLogic.GetAsync();
+            return Ok(posts);
         }
         catch (Exception e)
         {

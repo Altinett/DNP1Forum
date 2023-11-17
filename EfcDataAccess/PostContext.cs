@@ -17,7 +17,7 @@ public class PostContext : DbContext
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
-        modelBuilder.Entity<Post>().HasKey(todo => todo.Id);
+        modelBuilder.Entity<Post>().HasKey(post => post.Id);
         modelBuilder.Entity<User>().HasKey(user => user.Id);
     }
     

@@ -37,8 +37,8 @@ public class PostFileDao : IPostDao
         if (!string.IsNullOrEmpty(searchParams.Username))
         {
             // we know username is unique, so just fetch the first
-            result = context.Posts.Where(todo =>
-                todo.Owner.UserName.Equals(searchParams.Username, StringComparison.OrdinalIgnoreCase));
+            result = context.Posts.Where(post =>
+                post.Owner.UserName.Equals(searchParams.Username, StringComparison.OrdinalIgnoreCase));
         }
 
         if (searchParams.UserId != null)
@@ -77,10 +77,10 @@ public class PostFileDao : IPostDao
     
     public Task UpdateAsync(Post toUpdate)
     {
-        Post? existing = context.Posts.FirstOrDefault(todo => todo.Id == toUpdate.Id);
+        Post? existing = context.Posts.FirstOrDefault(post => post.Id == toUpdate.Id);
         if (existing == null)
         {
-            throw new Exception($"Todo with id {toUpdate.Id} does not exist!");
+            throw new Exception($"Post with id {toUpdate.Id} does not exist!");
         }
 
         context.Posts.Remove(existing);
@@ -93,10 +93,10 @@ public class PostFileDao : IPostDao
     
     public Task DeleteAsync(int id)
     {
-        Post? existing = context.Posts.FirstOrDefault(todo => todo.Id == id);
+        Post? existing = context.Posts.FirstOrDefault(post => post.Id == id);
         if (existing == null)
         {
-            throw new Exception($"Todo with id {id} does not exist!");
+            throw new Exception($"Post with id {id} does not exist!");
         }
 
         context.Posts.Remove(existing); 
